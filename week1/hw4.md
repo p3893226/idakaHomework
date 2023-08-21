@@ -18,4 +18,5 @@ Git 是版本控制軟體，版本控制每個人一定都有使用過，像是�
 `git merge` 合併兩個分支  
 `git branch -v` 可以查看目前有哪些分支  
 `git branch -d` 可以刪除分支  
-
+當 merge 時遇到 conflict，系統會出現 merge fail: merge conflict xxx 檔案，或是可以用 `gst` 來查看哪個檔案有衝突，然後需要進到檔案手動修正衝突的地方，git 會幫你標出衝突的地方，可以選擇保留主線或分支的內容，或是手動新增一個新內容，改完之後就可以 git commit 然後合併。  
+合併完之後，`git log` 可以看到主線的 commit、branch 的 commit 跟 conflict 完的 commit。
